@@ -9,8 +9,10 @@ So my approach is a combination of computer vision and NLP ( gathering spatial i
 
 Steps undertaken are as follows:
 1)	Convert the given text to an image using ascii art algorithm. ( txttoimg.py )
-2)	To Identify the line Items or table rows from the rest of the component, I had to train a  Naive Bayes model to classify the rows as relevant or not. For this purpose I collected all the lines of every textfile and manually annotated 1000 lines ( dataCollectionNLP.py )
+2)	To Identify the line Items or table rows from the rest of the component, 
+    I had to train a  Naive Bayes model to classify the rows as relevant or not. 
+    For this purpose I collected all the lines of every textfile and manually annotated 1000 lines ( dataCollectionNLP.py )
 3)	Using the data in step 2 I trained a Model for predicting the line tems. ( createModelNLP.py, predict.py )
-4)	Iterate through each image from step 1 in a row-wise(line by line) manner while
-Obtaining spatial information of each sparse line. Using the model in step 3 identify the table records, now identify the corresponding sparse record (line/word) which is occurring under the year 2019 by comparing the x co-ordinates of the words.
-Format output as per requirement and write to csv. ( invoiceReader_Main_Program.py )
+4)	Iterate through each image from step 1 in a row-wise(line by line) manner while Obtaining spatial information of each sparse line. 
+    Using the model in step 3 identify the table records, now identify the corresponding sparse record (line/word) which is occurring under the year 2019 by comparing the x co-ordinates of the words.
+    Format output as per requirement and write to csv. ( invoiceReader_Main_Program.py )
