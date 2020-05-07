@@ -1,8 +1,12 @@
 HCL Invoice Mining Assignment
-Approach
-The problem revolves around extracting the data corresponding to the year 2019 and all the line items given in the borderless table. This is not a conventional NLP problem as the spatial information regarding the alignment of data is quite important inn this scenario which cannot be obtained from conventional NLP techniques.
 
-So my approach is a combination of computer vision for gathering spatial information using tesseract and naïve Bayes. 
+Approach
+The problem revolves around extracting the data corresponding to the year 2019 and all the line items given in the borderless table. 
+This is not a conventional NLP problem as the spatial information regarding the alignment of data is quite important in this scenario, 
+which cannot be obtained from conventional NLP techniques.
+
+So my approach is a combination of computer vision and NLP ( gathering spatial information using tesseract and classification using naïve Bayes). 
+
 Steps undertaken are as follows:
 1)	Convert the given text to an image using ascii art algorithm. ( txttoimg.py )
 2)	To Identify the line Items or table rows from the rest of the component, I had to train a  Naive Bayes model to classify the rows as relevant or not. For this purpose I collected all the lines of every textfile and manually annotated 1000 lines ( dataCollectionNLP.py )
