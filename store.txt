@@ -1,0 +1,15 @@
+frcnn
+https://towardsdatascience.com/faster-r-cnn-object-detection-implemented-by-keras-for-custom-data-from-googles-open-images-125f62b9141a
+
+maskrcnn
+https://github.com/matterport/Mask_RCNN
+
+3dml
+https://github.com/deepmedic/deepmedic#4-how-to-run-deepmedic-on-your-data
+https://github.com/timzhang642/3D-Machine-Learning
+
+tensorflow 2.0
+https://github.com/lazyprogrammer/machine_learning_examples
+
+deepLearning 
+https://arxiv.org/pdf/1709.01412.pdf
